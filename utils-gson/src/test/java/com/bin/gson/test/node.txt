@@ -1,0 +1,17 @@
+//默认
+Gson gson = new Gson();
+
+//日期格式化&&格式化JSON输出
+GsonBuilder gsonBuilder = new GsonBuilder();
+gsonBuilder.setPrettyPrinting();
+gsonBuilder.setDateFormat("yyyy-MM-dd hh:mm:ss");
+gson = gsonBuilder.create();
+
+array = gson.fromJson(str, A[].class);
+list = gson.fromJson(str, new TypeToken<List<A>>() {}.getType());
+map = gson.fromJson(str, new TypeToken<Map<String, A>>(){}.getType());
+
+@Expose注解的作用：区分实体中不想被序列化的属性，其自身包含两个属性deserialize(反序列化)和serialize（序列化），默认都为true。
+使用 new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();创建Gson对象，没有@Expose注释的属性将不会被序列化.。
+
+@SerializedName注解的作用：定义属性序列化后的名称

@@ -1,0 +1,14 @@
+dateTime = new DateTime();
+dateTime = new DateTime(2016, 5, 9, 17, 30, 30);
+
+dateTime.toString("yyyy-MM-dd HH:mm:ss")
+dateTime.toString(DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss"))
+
+plusYears(1)=minusYears(-1)        加一年
+plusMonths(1)=minusMonths(-1)      加一月
+.....
+DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss").parseDateTime(dateStr)
+
+Years.yearsBetween()        相隔几年
+Months.monthsBetween()      相隔几月
+............

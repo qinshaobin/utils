@@ -1,0 +1,8 @@
+group 'com.bin.java'
+version '1.0.0'
+
+dependencies {
+    compile (
+        extDependencies.fst
+    )
+}

@@ -1,0 +1,3 @@
+http://orika-mapper.github.io/orika-docs/
+orika是一个java对象间属性映射的工具类，支持属性名不同
+simpler, lighter and faster Java bean mapping

@@ -1,0 +1,15 @@
+http://blog.csdn.net/pushme_pli/article/details/7829621
+
+XStream的限制：
+Xstream已经是很不错的东西了，如果真要找不足，我发现有两点。
+
+1. 反序列化的时候无法使用autodetectAnnotations（）方法通知XStream对象去识别annotation。
+还记的前面代码中xstream.autodetectAnnotations(true); 吗， 这句代码的意思是告诉XStream对象需要自动识别
+annotation， 这在序列化（JAVA bean-->XML）的时候没什么问题。但是在反序列化的时候就有问题了，
+原因官网上说的比较模糊，总之就是不行，只能通过xstream.processAnnotations(Class clazz)
+来显式的注册需要使用annotation的类才行，如果JAVA bean很多就会比较麻烦。但一般来说JAVA bean在
+代码组织结构中都比较集中，如放在听一个package下，这样也好办，可以再程序中将该package下的JAVA bean
+都获取，然后使用xstream.processAnnotations(Class[] clazzs) 批量注册。
+2. Null 属性无法被序列化。
+之前举的例子JAVA bean中的属性都是被初始化以后才进行序列化的，如果没有初始化就进行序列化会怎样呢 ，
+还是举个例子

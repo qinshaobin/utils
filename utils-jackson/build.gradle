@@ -1,0 +1,10 @@
+group 'com.bin.java'
+version '1.0.0'
+
+dependencies {
+    compile (
+            extDependencies.jackson_core,
+            extDependencies.jackson_databind,
+            extDependencies.jackson_annotations,
+    )
+}

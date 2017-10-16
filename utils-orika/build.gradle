@@ -1,0 +1,12 @@
+group 'com.bin.java'
+version '1.0.0'
+
+dependencies {
+
+    compile (
+        extDependencies.orika_core,
+    )
+
+    // 官方测试实例代码
+    //compile group: 'ma.glasnost.orika', name: 'orika-tests-jdk8', version: '1.5.1'
+}

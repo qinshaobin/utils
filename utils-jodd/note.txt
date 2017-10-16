@@ -1,0 +1,4 @@
+https://jodd.org/
+jodd是一个轻量级的java工具类。
+jodd-bean：javabean工具类：
+    BeanCopy：属性copy工具类，实现了javabean与javabean、map之间的属性互转。相互转化的对象属性名和类型必须一致。

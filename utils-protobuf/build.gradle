@@ -1,0 +1,9 @@
+group 'com.bin.java'
+version '1.0.0'
+
+dependencies {
+    compile (
+        extDependencies.protobuf_java,
+        extDependencies.protobuf_java_util,
+    )
+}

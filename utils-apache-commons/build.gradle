@@ -1,0 +1,10 @@
+group 'com.bin.java'
+version '1.0.0'
+
+dependencies {
+    compile (
+        extDependencies.commons_beanutils,
+        extDependencies.httpComponents_client,
+        extDependencies.commons_text,
+    )
+}

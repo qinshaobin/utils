@@ -1,0 +1,77 @@
+ext {
+    versions = [
+            //compile
+            commons_lang3             = '3.6',
+            commons_collections       = '3.2.2',
+            guava                     = '22.0',
+            joda_time                 = '2.4',
+            dom4j                     = '1.6.1',
+            jaxen                     = '1.1.6',
+            ehcache2x                 = '2.10.3',
+            ehcache3x                 = '3.2.1',
+            fastjson                  = '1.2.28',
+            fst                       = '2.48',
+            kryo                      = '2.24.0',
+            gson                      = '2.6.2',
+            jackson                   = '2.7.4',
+            protobuf                  = '3.2.0',
+            thumbnailator             = '0.4.8',
+            xstream                   = '1.4.9',
+            logback                   = '1.1.7',
+            log4j                     = '1.2.17',
+            commons_beanutils         = '1.9.3',
+            jodd                      = '3.8.6',
+            commons_httpComponents    = '4.5.3',
+            commons_text              = '1.1',
+            orika                     = '1.5.1',
+
+            //test
+            junit                     = '4.12',
+
+            //provided
+            lombok                    = '1.16.18',
+            swagger                   = '1.5.16',
+    ]
+
+    commonDependencies = [
+            //compile
+            commons_lang3          : "org.apache.commons:commons-lang3:${commons_lang3}",
+            commons_collections    : "commons-collections:commons-collections:${commons_collections}",
+            guava                  : "com.google.guava:guava:${guava}",
+            joda_time              : "joda-time:joda-time:${joda_time}",
+            fastjson               : "com.alibaba:fastjson:${fastjson}",
+
+            //test
+            junit                  : "junit:junit:${junit}",
+
+            //provided
+            lombok                 : "org.projectlombok:lombok:${lombok}",
+    ]
+
+    extDependencies = [
+            //compile
+            dom4j                  : "dom4j:dom4j:${dom4j}",
+            jaxen                  : "jaxen:jaxen:${jaxen}",
+            ehcache2x              : "net.sf.ehcache:ehcache:${ehcache2x}",
+            ehcache3x              : "org.ehcache:ehcache:${ehcache3x}",
+            fst                    : "de.ruedigermoeller:fst:${fst}",
+            kryo                   : "com.esotericsoftware.kryo:kryo:${kryo}",
+            gson                   : "com.google.code.gson:gson:${gson}",
+            jackson_core           : "com.fasterxml.jackson.core:jackson-core:${jackson}",
+            jackson_databind       : "com.fasterxml.jackson.core:jackson-databind:${jackson}",
+            jackson_annotations    : "com.fasterxml.jackson.core:jackson-annotations:${jackson}",
+            protobuf_java          : "com.google.protobuf:protobuf-java:${protobuf}",
+            protobuf_java_util     : "com.google.protobuf:protobuf-java-util:${protobuf}",
+            thumbnailator          : "net.coobird:thumbnailator:${thumbnailator}",
+            xstream                : "com.thoughtworks.xstream:xstream:${xstream}",
+            logback_core           : "ch.qos.logback:logback-core:${logback}",
+            logback_classic        : "ch.qos.logback:logback-classic:${logback}",
+            logback_access         : "ch.qos.logback:logback-access:${logback}",
+            log4j                  : "log4j:log4j:${log4j}",
+            commons_beanutils      : "commons-beanutils:commons-beanutils:${commons_beanutils}",
+            jodd_bean              : "org.jodd:jodd-bean:${jodd}",
+            httpComponents_client  : "org.apache.httpcomponents:httpclient:${commons_httpComponents}",
+            commons_text           : "org.apache.commons:commons-text:${commons_text}",
+            orika_core             : "ma.glasnost.orika:orika-core:${orika}",
+    ]
+}

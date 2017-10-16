@@ -1,0 +1,10 @@
+group 'com.bin.java'
+version '1.0.0'
+
+dependencies {
+    compile (
+        extDependencies.logback_core,
+        extDependencies.logback_classic,
+        extDependencies.logback_access,
+    )
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<request xmlns:bin="com.bin">
+  <head>
+    <merCode>808801</merCode>
+    <billNo>123456</billNo>
+    <trdDate>2017-07-19</trdDate>
+  </head>
+  <detail>
+    <users>
+      <user>
+        <name>秦少�?0</name>
+        <age>24</age>
+        <sex>male</sex>
+      </user>
+      <user>
+        <name>秦少�?1</name>
+        <age>25</age>
+        <sex>male</sex>
+      </user>
+      <user>
+        <name>秦少�?2</name>
+        <age>26</age>
+        <sex>female</sex>
+      </user>
+      <user>
+        <name>秦少�?3</name>
+        <age>27</age>
+        <sex>female</sex>
+      </user>
+      <user>
+        <name>秦少�?4</name>
+        <age>28</age>
+        <sex>female</sex>
+      </user>
+    </users>
+  </detail>
+</request>
